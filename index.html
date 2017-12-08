@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>IMD CA2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  
+  <style>
+	.header{
+	margin:	auto;
+	position: relative;
+	display:	inline;
+	}
+	
+	body{
+	background-color: #111e27;
+	} 
+	
+	.hero-image {
+	position: fixed;
+    background-image: url("images/background.jpg");
+
+    width: 100%;
+    height: 50vh;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+	}
+	
+	.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+	text-size: auto;
+	}
+	
+	section{
+	color: white;
+	margin-left: 	1em; 
+	padding-top:	1em;
+	}
+	
+	h1, h4{
+	text-align: center;
+	}
+	
+	#projectshead, #workexphead{
+	text-align: left;
+	}
+	
+	input[type=text] {
+    width: 130px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+	}
+
+	input[type=text]:focus {
+    width: 100%;
+	}
+	
+	.fa {
+    padding: 4%;
+    font-size: 25px;
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+	}
+
+	.fa:hover {
+    opacity: 0.7;
+	color: black;
+	}
+	
+	.fa-reddit {
+	color: green;
+	}
+	
+	.fa-twitter{
+	color: white;
+	}
+	
+	.fa-linkedin{
+	color: purple;
+	}
+	
+  </style>
+  
+  <script>
+	$(document).ready(function(){
+		$("#home").click(function(){
+        $("#sectionh1").html("Welcome");
+        $("#p1").html("I am a Computer Science student with relevant employment experience seeking a position in your esteemed organization as an intern to develop my computing skills and to broaden my knowledge in software development, app development, data analytics and other areas in computing. I am a hard worker, self-motivated person, strong interpersonal skills and a willing learner, as I really want to improve myself as a developer and be able to conquer any challenges I may face ahead.");
+		});
+		
+		$("#1styear").click(function(){
+        $("#sectionh1").html("Education");
+		$("#p1").html("<h4>B.Sc. (Honours) in Computing, Institute of Technology Tallaght (ITT) - 1st Year</h4>");
+		$("#p1").append("<table class='table table-bordered'><thead><tr><th>Module</th><th>Grade</th></tr></thead>" 
+		+ "<tbody><tr><td>John</td><td>Doe</td></tr>"
+		+ "<tr><td>Mary</td><td>Moe</td></tr>"
+		+ "<tr><td>July</td><td>Dooley</td></tr></tbody></table>")
+		});
+		
+		$("#projects").click(function(){
+        $("#sectionh1").html("Projects");
+        $("#p1").html("<h4 id='projectshead'>These are my projects</h4>");
+		$("#p1").append("<ul class='nav nav-pills'><li class='active'><a  href='#4p' data-toggle='tab'>Fourth Year</a></li><li><a  href='#3p' data-toggle='tab'>Third Year</a></li><li><a  href='#2p' data-toggle='tab'>Second Year</a></li></ul>"
+		+ "<div class='tab-content'><div class='tab-pane active' id='4p'><p>(Not yet finished) I am making a online exercise buddy android application.</p></div>"
+		+ "<div class='tab-pane' id='3p'><p>I made a bxp software android app for the company where I did my internship. For this project, I used android studio, java, JavaScript, XML, SQLite database, the company’s API and gimp. I got a grade of (A).</p></div>"
+		+ "<div class='tab-pane' id='2p'><p>I made an online cinema booking website. I used java play framework, HTML and CSS, I got a grade of (B-).</p></div></div>");
+		});
+		
+		$("#workExp").click(function(){
+        $("#sectionh1").html("Work Experience");
+        $("#p1").html("<h4 id='workexphead'>Projects Intern, All n One bxp Software (6 months)</h4>");
+		$("#p1").append("<ul style='list-style-type:disc'><li>Working in a fast paced and highly productive environment as part of an Agile feature team.</li>"
+		+ "<li>Majority of my time was spent on doing a project (bxp software android app) for the company.</li>"
+		+ "<li>Some other time I go and help some of my colleagues at anything they need. For instance, I did some data migration for one of our clients (Dublin Chamber of Commerce) and I helped one of colleague looked into Jenkins to create an automatic testing system.</li>"
+		+ "<li>Did some manual testing.</li>"
+		+ "<li>Did some content developing for Paddy Power also one of our company’s client. I fixed their web page, because they wanted to make it looked better.</li></ul>");
+		});
+		
+	});
+</script>
+  
+ </head>
+ <body>
+ 
+	<div class="container-fluid">
+		<div class="hero-image">
+			<div class="hero-text">
+				<img src="images/profpic.jpg" class="img-circle" width="175" height="110">
+				<h2>John Darren De Lara</h2>
+				<p>Computer Science Student</p>
+				<a href="https://www.facebook.com/jd.delara.3" target="_blank" class="fa fa-facebook"></a>
+				<a href="https://twitter.com/jdelz16" target="_blank" class="fa fa-twitter"></a>
+				<a href="https://www.linkedin.com/in/jddelara/" target="_blank" class="fa fa-linkedin"></a>
+				<a href="https://www.reddit.com/user/jdelz16/" target="_blank" class="fa fa-reddit"></a>
+				<br/>
+				<input type="text" name="search" placeholder="Search..">
+			</div>
+		</div>
+		
+	<nav class="navbar navbar-inverse" style="width: 100%">	
+		<div class="navbar-header">
+			<a class="navbar-brand" href="#">JD CV</a>
+		</div>
+		<ul class="nav navbar-nav" >
+			<li id="home"><a href="#home">Home</a></li>
+			<li class="dropdown">
+                <a href="#" data-toggle="dropdown" class="dropdown-toggle">Education <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                    <li id="1styear"><a href="#1styear">1st Year</a></li>
+                    <li id="2ndyear"><a href="#2ndyear">2nd Year</a></li>
+                    <li id="3rdyear"><a href="#3rdyear">3rd Year</a></li>
+                </ul>
+            </li>
+			<li id="projects"><a href="#projects">Projects</a></li>
+			<li id="workExp"><a href="#workExp">Work Experience</a></li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right" style="margin-right: 1em">
+			<li><a href="#"><span class="glyphicon glyphicon-cloud-download"></span> Download CV </a></li>
+			<li><a href="#"><span class="glyphicon glyphicon-earphone"></span> Contact Me </a></li>
+		</ul>
+	</nav>
+	
+	<section>
+		<div id="home">
+			<h1 id="sectionh1">Welcome</h1>
+			<p id="p1">I am a Computer Science student with relevant employment experience seeking a position in your esteemed organization as an intern to develop my computing skills and to broaden my knowledge in software development, app development, data analytics and other areas in computing. I am a hard worker, self-motivated person, strong interpersonal skills and a willing learner, as I really want to improve myself as a developer and be able to conquer any challenges I may face ahead.</p>
+		</div>
+	</section>
+	
+	</div>
+ </body>
+</html>
